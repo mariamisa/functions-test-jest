@@ -18,26 +18,14 @@ const updateEl=(array,id,newValue)=>{
 // -------------update with specific ket and value -------
 
 const updateElKey=(array,id,key,value)=>{
-    const newArry=JSON.parse(JSON.stringify(array))
-    return newArry.map(el=>{
-        if(el.id==id){
-          el[key]=value
-          return el
+    return array.map(obj=>{
+        let newObj={...obj}
+        if(obj.id==id){
+            newObj[key]=value
+            return newObj
         }
-        return el
+        return newObj
         })
-    
-        //solution with reduce
-
-    // return newArry.reduce((acc,obj)=>{
-    //     if(obj.id==id){
-    //         obj[key]=value;
-    //         acc.push(obj)
-    //     }else{
-    //         acc.push(obj)
-    //     }
-    //     return acc
-    // },[]);
 } 
 
 
