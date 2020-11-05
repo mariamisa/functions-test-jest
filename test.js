@@ -42,7 +42,7 @@ test('make add function take array and el and add el to array', () => {
     expect(expected).toEqual(actual);
   });
 
-  test ('make filter by proparity and value on array',()=>{
+  test ('make filter by property and value on array',()=>{
       const expected = filterByProp(users,'name','i');
       const actual = [{id:"1" , name:"ali"}]
       expect(expected).toEqual(actual)

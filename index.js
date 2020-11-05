@@ -6,7 +6,7 @@ const add=(array,newEl)=>{
 
 //----------- removeEl function ------
 const deleteById=(array,id)=>{
-    return array.filter(el=>el.id!=id)   //return all el without the id arg
+    return array.filter(el=>el.id!=id) 
 }
 
 // --------- updateEl function ------
